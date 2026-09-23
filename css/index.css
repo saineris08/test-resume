@@ -66,49 +66,15 @@ img{
     padding-top: 20px;
     font-weight: 300;
 }
-
-.ability{
+.ability {
     width: 250px;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.finder{
-    width: auto;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid var(--main-color);
-    padding-left: 5px;
-}
-.skills{
-    display: flex;
-    max-height: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.btn_filt{
-    padding: 3px 8px;
-    height: 30px;
-    font-size: 16px;
-    background-color: var(--main-color);
-    color:aliceblue;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-.active {
-    background-color: #2a5cff;
-}
-
-.list p{
+.list p {
     color: var(--main-color);
-}
-.find_no{
-    display: none;
-    color:dimgray;
-    margin-top: 10px;
 }
 main{
     margin-top: 60px;
