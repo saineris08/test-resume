@@ -1,0 +1,261 @@
+:root {
+    --main-color: rgb(18, 135, 251);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+body{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+body.dark_theme {
+    background-color: #000000;
+    color:aliceblue
+}
+.btn_main{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    color:aliceblue;
+    background-color: var(--main-color);
+    border: none;
+}
+header{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 270px;
+}
+.header_title{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.name{
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.undertitle{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.text{
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.ability{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.finder{
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    padding-left: 5px;
+}
+.skills{
+    display: flex;
+    max-height: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn_filt{
+    padding: 3px 8px;
+    height: 30px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color:aliceblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.active {
+    background-color: #2a5cff;
+}
+
+.list p{
+    color: var(--main-color);
+}
+.find_no{
+    display: none;
+    color:dimgray;
+    margin-top: 10px;
+}
+main{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.fst_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h2{
+    color: var(--main-color);
+    padding-bottom: 10px;
+}
+.study, .experience, .sfskills{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.line{
+    width: 2px;
+    border-radius: 20px;
+    max-height: 100%;
+    background-color: var(--main-color);
+}
+.prof{
+    font-weight: 500;
+}
+.prof::before{
+    content: "— ";
+    color: var(--main-color);
+    font-weight: 400;
+}
+.experience{
+    font-weight: 200;
+}
+.part_list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title_list{
+    font-weight: 500;
+    font-size: 18px;
+}
+.sfskills{
+    width: 170px;
+}
+.soft_list p{
+    margin-bottom: 15px;
+}
+section{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+section h2{
+    text-align: center;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projects img{
+    width: 180px;
+    height: 300px;
+    object-fit: contain;
+}
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 20px 0 0 20px;
+    color: aliceblue;
+}
+footer h2{
+    color: aliceblue;
+    text-align: center;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.data_item p{
+    font-size: 18px;
+}
+.line_cont{
+    width: 2px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.data_titl{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.data img{
+    width: 80px;
+    height: 80px;
+}
+@media (max-width: 375px){
+    header, .fst_line, .data, .projects{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .btn_main{
+        width: 70px;
+        height: 30px;
+        position: static;
+        margin: 0 auto 20px auto;
+        display: block;
+}
+    footer{
+        border-radius: 0px;!important
+    }
+}
+@media (max-width: 768px){
+    header, .fst_line, .data, .projects{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .btn_main{
+        width: 70px;
+        height: 30px;
+        position: static;
+        margin: 0 auto 20px auto;
+        display: block;
+}
+    footer{
+        border-radius: 0px;!important
+    }
+}

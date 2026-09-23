@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <button id="btn_th" class="btn_main">Темная</button>
+
+    <header>
+        <img src="img/фото.jpg">
+        <div class="header_title">
+            <p class="title">Резюме</p>
+            <p class="name">Кнышова Юлия</p>
+            <p class="undertitle">Дизайнер, программист</p>
+            <p class="text">Мне 22 года, учусь на программиста,
+                <br>занимаюсь дизайном и разработкой web-сайтов,
+                <br>в свободное время хожу на растяжку
+            </p>
+            <p><br>уровень английского: B1</p>
+        </div>
+
+
+
+
+        <div class="ability">
+            <p class="title">Навыки</p>
+
+            <input class="finder" type="text" id="skills_find" placeholder="Поиск">
+
+            <div class="skills">
+                <button class="btn_filt active" data-category="all">Все</button>
+                <button class="btn_filt" data-category="des">Дизайн</button>
+                <button class="btn_filt" data-category="dev">Разработка</button>
+            </div>
+
+            <div class="list">
+                <p data-tech="Illustrator" data-cat="des">Illustrator</p>
+                <p data-tech="UI/UX" data-cat="des">UI/UX</p>
+                <p data-tech="Figma" data-cat="des">Figma</p>
+                <p data-tech="Photoshop" data-cat="des">Photoshop</p>
+                <p data-tech="CSS" data-cat="dev">CSS</p>
+                <p data-tech="HTML" data-cat="dev">HTML</p>
+                <p data-tech="Python" data-cat="dev">Python</p>
+            </div>
+
+            <div class="find_no" id="skills_no">
+                Ничего не найдено
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="fst_line">
+
+            <div class="study">
+                <h2>Образование</h2>
+                <p>2021-2025 | Брянский строительный колледж</p>
+                <p class="prof">Графический дизайнер</p>
+
+                <p>2022 | Нетология</p>
+                <p class="prof">Веб-дизайнер</p>
+
+                <p>2025 - н.в. | Брянский государственный
+                    инженерно-технологический
+                    университет</p>
+                <p class="prof">Программная инженерия</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="experience">
+                <h2>Опыт работы</h2>
+                <div class=" exp_list">
+
+                    <div class="part_list">
+                        <p class="title_list">2022 | Графический дизайнер</p>
+                        <p>Работа в типографии, разработка рекламной и сувенирной продукций</p>
+                    </div>
+
+                    <div class="part_list">
+                        <p class="title_list">2023 | Фриланс</p>
+                        <p>Выполняла заказы по логотипам, визиткам, полиграфии</p>
+                    </div>
+
+                    <div class="part_list">
+                        <p class="title_list">2025 | Графический дизайнер</p>
+                        <p>Разработка инфографики на Wildberries, Ozon</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="sfskills">
+                <h2>Soft-skills</h2>
+                <div class="soft_list">
+                    <p>Работа в команде</p>
+                    <p>Ответственность</p>
+                    <p>Насмотренность</p>
+                    <p>Тайм-менеджмент</p>
+                    <p>Адаптивность</p>
+                    <p>Гибкость</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section>
+
+        <h2>Мои проекты</h2>
+        <div class="projects">
+            <img src="img/1про.jpg">
+            <img src="img/3про.png">
+            <img src="img/5про.jpg">
+            <img src="img/4про.jpg">
+            <img src="img/2про.jpg">
+        </div>
+
+    </section>
+
+    <footer>
+        <h2>Контакты</h2>
+        <div class="data">
+            <div class="data_item">
+                <p class="data_titl">Телефон:</p>
+                <p>+7(999)999-99-99</p>
+            </div>
+
+            <div class="data_item">
+                <p class="data_titl">Почта:</p>
+                <p>juliajulia@julia.ru</p>
+            </div>
+
+            <div class="data_item">
+                <p class="data_titl">Соц сети:</p>
+                <p>@juliajulia</p>
+            </div>
+
+            <img src="img/qr-code.png">
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
